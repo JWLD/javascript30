@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, div, kbd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('pics/crowd.jpg');
+}
+
+#drumWrap {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.drum {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font: 20px BrandL;
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.drum kbd {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    background-color: #222;
+    color: gray;
+    font: 15px BrandL;
+}
+
+.playing {
+    color: #f66;
+    font-size: 22px;
+    transform: rotate(2deg);
+}
+
+@font-face {
+    font-family: 'BrandL';
+    src: url('fonts/brandon_light.otf');
+}
