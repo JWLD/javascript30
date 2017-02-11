@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, div, kbd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('pics/slice1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#clockFace {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 350px;
+    width: 350px;
+    margin: 10vmin;
+    border-radius: 100%;
+    background-image: url('pics/moon.png');
+    background-size: cover;
+    box-shadow: 0 0 75px #222;
+}
+
+#pivotPoint {
+    z-index: 1;
+    height: 6%;
+    width: 6%;
+    border-radius: 100%;
+    background-color: #ffc;
+    box-shadow: 0 0 2px 2px #ffc;
+}
+
+.hand {
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 50%;
+    transform-origin: right;
+    width: 45%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #ffc;
+    transform: rotate(90deg);
+    box-shadow: 0 0 2px 1px #ffc;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0, 1.85, 0.58, 1);
+}
+
+.hand.seconds {
+    height: 5px;
+    top: calc(50% - 2.5px);
+}
+
+.hand.minutes {
+    width: 40%;
+}
+
+.hand.hours {
+    width: 30%;
+}
+
+@font-face {
+    font-family: 'BrandL';
+    src: url('fonts/brandon_light.otf');
+}
