@@ -38,7 +38,7 @@ body {
     width: 6%;
     border-radius: 100%;
     background-color: #ffc;
-    box-shadow: 0 0 2px 2px #ffc;
+    box-shadow: 0 0 10px 1px gray;
 }
 
 .hand {
@@ -51,7 +51,7 @@ body {
     border-radius: 4px;
     background-color: #ffc;
     transform: rotate(90deg);
-    box-shadow: 0 0 2px 1px #ffc;
+    box-shadow: 0 0 10px 1px gray;
     transition: 0.2s;
     transition-timing-function: cubic-bezier(0, 1.85, 0.58, 1);
 }
