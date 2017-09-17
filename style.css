@@ -47,18 +47,22 @@ body {
 }
 
 .site-link:hover {
-  background-color: #3a3a3a;
+  background-color: #444;
 }
 
 .code-link {
-  color: white;
+  color: #444;
   position: absolute;
   right: 16px;
   font-size: 24px;
-  background-color: #444;
+  background-color: white;
   height: 40px;
   width: 40px;
   border-radius: 100%;
+}
+
+.code-link:hover {
+  color: tomato;
 }
 
 span {
