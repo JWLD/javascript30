@@ -43,22 +43,20 @@ body {
 
 .hand {
     position: absolute;
-    top: calc(50% - 5px);
+    top: 50%;
     right: 50%;
-    transform-origin: right;
+    transform-origin: right center;
     width: 45%;
     height: 10px;
     border-radius: 4px;
     background-color: #ffc;
     transform: rotate(90deg);
     box-shadow: 0 0 10px 1px gray;
-    transition: 0.2s;
-    transition-timing-function: cubic-bezier(0, 1.85, 0.58, 1);
+    transition: 0.15s;
 }
 
 .hand.seconds {
     height: 5px;
-    top: calc(50% - 2.5px);
 }
 
 .hand.minutes {
