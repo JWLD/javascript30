@@ -27,6 +27,7 @@ body {
   padding: 16px;
   border-radius: 4px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .project-wrap {
@@ -35,7 +36,6 @@ body {
 }
 
 .site-link {
-  position: relative;
   color: white;
   font: 50px Dense;
   padding: 16px;
